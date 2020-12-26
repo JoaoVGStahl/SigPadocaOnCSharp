@@ -1,0 +1,10 @@
+C:\Users\Valorant\Documents\Projetos\C#\SigPadoca\obj\Debug\SigPadoca.csprojAssemblyReference.cache
+C:\Users\Valorant\Documents\Projetos\C#\SigPadoca\obj\Debug\SigPadoca.Properties.Resources.resources
+C:\Users\Valorant\Documents\Projetos\C#\SigPadoca\obj\Debug\SigPadoca.FrmLogin.resources
+C:\Users\Valorant\Documents\Projetos\C#\SigPadoca\obj\Debug\SigPadoca.csproj.GenerateResource.cache
+C:\Users\Valorant\Documents\Projetos\C#\SigPadoca\bin\Debug\SigPadoca.exe.config
+C:\Users\Valorant\Documents\Projetos\C#\SigPadoca\bin\Debug\SigPadoca.exe
+C:\Users\Valorant\Documents\Projetos\C#\SigPadoca\bin\Debug\SigPadoca.pdb
+C:\Users\Valorant\Documents\Projetos\C#\SigPadoca\obj\Debug\SigPadoca.exe
+C:\Users\Valorant\Documents\Projetos\C#\SigPadoca\obj\Debug\SigPadoca.pdb
+C:\Users\Valorant\Documents\Projetos\C#\SigPadoca\obj\Debug\SigPadoca.FrmMenuPrincipal.resources

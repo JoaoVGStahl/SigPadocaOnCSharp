@@ -21,6 +21,7 @@ namespace SigPadoca
         {
             linkLabel1.Text = "Esqueceu a senha?";
             linkLabel1.Links.Add(0, 17, "https://www.google.com.br");
+            Horario();
         }
         //Redirecionamento LabelLink
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -44,6 +45,18 @@ namespace SigPadoca
                 MessageBox.Show("Usuário ou Senha Incorretos!");
             }
 
+        }
+        public void Horario()
+        {
+            string dataCompleta = DateTime.Now.ToLongDateString();
+            string Semana = dataCompleta.Substring(0, 1).ToUpper() + dataCompleta.Substring(1, dataCompleta.Length - 1);
+            StripData.Text = Semana;
+            timer1.Enabled = true;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            StripHora.Text = DateTime.Now.ToLongTimeString();
         }
     }
 }

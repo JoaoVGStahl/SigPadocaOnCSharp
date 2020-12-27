@@ -41,5 +41,10 @@ namespace SigPadoca
             StripHora.Text = DateTime.Now.ToLongTimeString();
         }
         #endregion
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

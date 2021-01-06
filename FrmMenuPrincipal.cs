@@ -16,10 +16,14 @@ namespace SigPadoca
         {
             InitializeComponent();
         }
+        public void Sair()
+        {
+            Application.Exit();
+        }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Sair();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -45,6 +49,38 @@ namespace SigPadoca
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sair();
+        }
+
+        private void calculadoraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("calc");
+        }
+
+        private void calendárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void BtnCalcCalorias_Click(object sender, EventArgs e)
+        {         
+
+        }
+
+        private void FrmMenuPrincipal_BackColorChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnClientes_Click(object sender, EventArgs e)
+        {
+            FrmCadastroClientes Frm = new FrmCadastroClientes();
+            Frm.Show();
+            Hide();
         }
     }
 }

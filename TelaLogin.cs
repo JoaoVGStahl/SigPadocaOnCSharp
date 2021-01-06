@@ -43,6 +43,9 @@ namespace SigPadoca
             else
             {
                 MessageBox.Show("Usuário ou Senha Incorretos!");
+                TxtUsuario.Text = "";
+                TxtSenha.Text = "";
+                TxtUsuario.Focus();
             }
 
         }

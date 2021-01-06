@@ -30,13 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BtnFechar = new System.Windows.Forms.Button();
-            this.BtnCalendario = new System.Windows.Forms.Button();
-            this.BtnRelatorios = new System.Windows.Forms.Button();
-            this.BtnCalcCalorias = new System.Windows.Forms.Button();
-            this.BtnFornecedores = new System.Windows.Forms.Button();
-            this.BtnProdutos = new System.Windows.Forms.Button();
-            this.BtnClientes = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,15 +47,22 @@
             this.quantidadeDeCaloriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.maiorDeIdadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.StripData = new System.Windows.Forms.ToolStripStatusLabel();
             this.StripHora = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnFechar = new System.Windows.Forms.Button();
+            this.BtnCalendario = new System.Windows.Forms.Button();
+            this.BtnRelatorios = new System.Windows.Forms.Button();
+            this.BtnCalcCalorias = new System.Windows.Forms.Button();
+            this.BtnFornecedores = new System.Windows.Forms.Button();
+            this.BtnProdutos = new System.Windows.Forms.Button();
+            this.BtnClientes = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -79,96 +79,6 @@
             this.panel1.Size = new System.Drawing.Size(891, 111);
             this.panel1.TabIndex = 6;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // BtnFechar
-            // 
-            this.BtnFechar.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnFechar.Image = global::SigPadoca.Properties.Resources.saida_de_emergencia;
-            this.BtnFechar.Location = new System.Drawing.Point(761, 3);
-            this.BtnFechar.Name = "BtnFechar";
-            this.BtnFechar.Size = new System.Drawing.Size(126, 104);
-            this.BtnFechar.TabIndex = 6;
-            this.BtnFechar.Text = "Fechar";
-            this.BtnFechar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BtnFechar.UseVisualStyleBackColor = true;
-            this.BtnFechar.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // BtnCalendario
-            // 
-            this.BtnCalendario.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCalendario.Image = global::SigPadoca.Properties.Resources.calendario;
-            this.BtnCalendario.Location = new System.Drawing.Point(635, 3);
-            this.BtnCalendario.Name = "BtnCalendario";
-            this.BtnCalendario.Size = new System.Drawing.Size(126, 104);
-            this.BtnCalendario.TabIndex = 5;
-            this.BtnCalendario.Text = "Calendário";
-            this.BtnCalendario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BtnCalendario.UseVisualStyleBackColor = true;
-            // 
-            // BtnRelatorios
-            // 
-            this.BtnRelatorios.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRelatorios.Image = global::SigPadoca.Properties.Resources.relatorio;
-            this.BtnRelatorios.Location = new System.Drawing.Point(383, 3);
-            this.BtnRelatorios.Name = "BtnRelatorios";
-            this.BtnRelatorios.Size = new System.Drawing.Size(126, 104);
-            this.BtnRelatorios.TabIndex = 4;
-            this.BtnRelatorios.Text = "Relatórios";
-            this.BtnRelatorios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BtnRelatorios.UseVisualStyleBackColor = true;
-            // 
-            // BtnCalcCalorias
-            // 
-            this.BtnCalcCalorias.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCalcCalorias.Image = global::SigPadoca.Properties.Resources.refeicao;
-            this.BtnCalcCalorias.Location = new System.Drawing.Point(509, 3);
-            this.BtnCalcCalorias.Name = "BtnCalcCalorias";
-            this.BtnCalcCalorias.Size = new System.Drawing.Size(126, 104);
-            this.BtnCalcCalorias.TabIndex = 3;
-            this.BtnCalcCalorias.Text = "Calc Calorias";
-            this.BtnCalcCalorias.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BtnCalcCalorias.UseVisualStyleBackColor = true;
-            // 
-            // BtnFornecedores
-            // 
-            this.BtnFornecedores.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnFornecedores.Image = global::SigPadoca.Properties.Resources.produtos;
-            this.BtnFornecedores.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnFornecedores.Location = new System.Drawing.Point(256, 3);
-            this.BtnFornecedores.Name = "BtnFornecedores";
-            this.BtnFornecedores.Size = new System.Drawing.Size(126, 104);
-            this.BtnFornecedores.TabIndex = 2;
-            this.BtnFornecedores.Text = "Fornecedor";
-            this.BtnFornecedores.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnFornecedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BtnFornecedores.UseVisualStyleBackColor = true;
-            // 
-            // BtnProdutos
-            // 
-            this.BtnProdutos.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnProdutos.Image = global::SigPadoca.Properties.Resources.devolucao_de_produto;
-            this.BtnProdutos.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnProdutos.Location = new System.Drawing.Point(130, 3);
-            this.BtnProdutos.Name = "BtnProdutos";
-            this.BtnProdutos.Size = new System.Drawing.Size(126, 104);
-            this.BtnProdutos.TabIndex = 1;
-            this.BtnProdutos.Text = "Produtos";
-            this.BtnProdutos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnProdutos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BtnProdutos.UseVisualStyleBackColor = true;
-            // 
-            // BtnClientes
-            // 
-            this.BtnClientes.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnClientes.Image = global::SigPadoca.Properties.Resources.consumidor;
-            this.BtnClientes.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnClientes.Location = new System.Drawing.Point(4, 3);
-            this.BtnClientes.Name = "BtnClientes";
-            this.BtnClientes.Size = new System.Drawing.Size(126, 104);
-            this.BtnClientes.TabIndex = 0;
-            this.BtnClientes.Text = "Clientes";
-            this.BtnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BtnClientes.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
             // 
@@ -270,12 +180,14 @@
             this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
             this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.calculadoraToolStripMenuItem.Text = "Calculadora";
+            this.calculadoraToolStripMenuItem.Click += new System.EventHandler(this.calculadoraToolStripMenuItem_Click);
             // 
             // calendárioToolStripMenuItem
             // 
             this.calendárioToolStripMenuItem.Name = "calendárioToolStripMenuItem";
             this.calendárioToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.calendárioToolStripMenuItem.Text = "Calendário";
+            this.calendárioToolStripMenuItem.Click += new System.EventHandler(this.calendárioToolStripMenuItem_Click);
             // 
             // quantidadeDeCaloriasToolStripMenuItem
             // 
@@ -294,16 +206,7 @@
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.sairToolStripMenuItem.Text = "Sair";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SigPadoca.Properties.Resources.TelaPrincipal;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 140);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(891, 365);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
@@ -334,6 +237,108 @@
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SigPadoca.Properties.Resources.TelaPrincipal;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 140);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(891, 365);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // BtnFechar
+            // 
+            this.BtnFechar.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnFechar.Image = global::SigPadoca.Properties.Resources.saida_de_emergencia;
+            this.BtnFechar.Location = new System.Drawing.Point(761, 3);
+            this.BtnFechar.Name = "BtnFechar";
+            this.BtnFechar.Size = new System.Drawing.Size(126, 104);
+            this.BtnFechar.TabIndex = 6;
+            this.BtnFechar.Text = "Fechar";
+            this.BtnFechar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnFechar.UseVisualStyleBackColor = true;
+            this.BtnFechar.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // BtnCalendario
+            // 
+            this.BtnCalendario.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCalendario.Image = global::SigPadoca.Properties.Resources.calendario;
+            this.BtnCalendario.Location = new System.Drawing.Point(635, 3);
+            this.BtnCalendario.Name = "BtnCalendario";
+            this.BtnCalendario.Size = new System.Drawing.Size(126, 104);
+            this.BtnCalendario.TabIndex = 5;
+            this.BtnCalendario.Text = "Calendário";
+            this.BtnCalendario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnCalendario.UseVisualStyleBackColor = true;
+            // 
+            // BtnRelatorios
+            // 
+            this.BtnRelatorios.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRelatorios.Image = global::SigPadoca.Properties.Resources.relatorio;
+            this.BtnRelatorios.Location = new System.Drawing.Point(383, 3);
+            this.BtnRelatorios.Name = "BtnRelatorios";
+            this.BtnRelatorios.Size = new System.Drawing.Size(126, 104);
+            this.BtnRelatorios.TabIndex = 4;
+            this.BtnRelatorios.Text = "Relatórios";
+            this.BtnRelatorios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnRelatorios.UseVisualStyleBackColor = true;
+            // 
+            // BtnCalcCalorias
+            // 
+            this.BtnCalcCalorias.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCalcCalorias.Image = global::SigPadoca.Properties.Resources.refeicao;
+            this.BtnCalcCalorias.Location = new System.Drawing.Point(509, 3);
+            this.BtnCalcCalorias.Name = "BtnCalcCalorias";
+            this.BtnCalcCalorias.Size = new System.Drawing.Size(126, 104);
+            this.BtnCalcCalorias.TabIndex = 3;
+            this.BtnCalcCalorias.Text = "Calc Calorias";
+            this.BtnCalcCalorias.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnCalcCalorias.UseVisualStyleBackColor = true;
+            this.BtnCalcCalorias.Click += new System.EventHandler(this.BtnCalcCalorias_Click);
+            // 
+            // BtnFornecedores
+            // 
+            this.BtnFornecedores.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnFornecedores.Image = global::SigPadoca.Properties.Resources.produtos;
+            this.BtnFornecedores.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnFornecedores.Location = new System.Drawing.Point(256, 3);
+            this.BtnFornecedores.Name = "BtnFornecedores";
+            this.BtnFornecedores.Size = new System.Drawing.Size(126, 104);
+            this.BtnFornecedores.TabIndex = 2;
+            this.BtnFornecedores.Text = "Fornecedor";
+            this.BtnFornecedores.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnFornecedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnFornecedores.UseVisualStyleBackColor = true;
+            // 
+            // BtnProdutos
+            // 
+            this.BtnProdutos.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnProdutos.Image = global::SigPadoca.Properties.Resources.devolucao_de_produto;
+            this.BtnProdutos.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnProdutos.Location = new System.Drawing.Point(130, 3);
+            this.BtnProdutos.Name = "BtnProdutos";
+            this.BtnProdutos.Size = new System.Drawing.Size(126, 104);
+            this.BtnProdutos.TabIndex = 1;
+            this.BtnProdutos.Text = "Produtos";
+            this.BtnProdutos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnProdutos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnProdutos.UseVisualStyleBackColor = true;
+            // 
+            // BtnClientes
+            // 
+            this.BtnClientes.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClientes.Image = global::SigPadoca.Properties.Resources.consumidor;
+            this.BtnClientes.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnClientes.Location = new System.Drawing.Point(4, 3);
+            this.BtnClientes.Name = "BtnClientes";
+            this.BtnClientes.Size = new System.Drawing.Size(126, 104);
+            this.BtnClientes.TabIndex = 0;
+            this.BtnClientes.Text = "Clientes";
+            this.BtnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnClientes.UseVisualStyleBackColor = true;
+            this.BtnClientes.Click += new System.EventHandler(this.BtnClientes_Click);
+            // 
             // FrmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
@@ -346,16 +351,18 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.MaximizeBox = false;
             this.Name = "FrmMenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sig Padoca - Menu Principal";
             this.Load += new System.EventHandler(this.FrmMenuPrincipal_Load);
+            this.BackColorChanged += new System.EventHandler(this.FrmMenuPrincipal_BackColorChanged);
             this.panel1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
